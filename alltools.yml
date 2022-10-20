@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  become: yes
+
+  tasks:
+    - name: this is a sample project to test git ansible and jenkins
+      file:
+        path: alltool.sql
+        state: touch
